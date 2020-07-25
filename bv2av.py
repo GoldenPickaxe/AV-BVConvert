@@ -1,18 +1,20 @@
 table = 'fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
-def bv2av(bv:str):
-    av = []
+
+
+def bv2av(bv: str):
+    """Example: 17x411w7KC"""
+
+    index = []
+
     for each in bv:
-        av.append(table.find(each))
-    av[0] *= 38068692544
-    av[1] *= 3364
-    av[2] *= 11316496
-    av[3] *= 128063081718016
-    av[4] *= 656356768
-    av[5] *= 7427658739644928
-    av[6] *= 195112
-    av[7] *= 2207984167552
-    av[8] *= 58
-    av[9] *= 1
-    av = sum(av) - 100618342136696320
-    av = av ^ 0b1010100100111011001100100100
+        index.append(table.index(each))  # str.index()=str.find()
+
+    numbers = [6, 2, 4, 8, 5, 9, 3, 7, 1, 0]
+
+    for i in range(10):
+        index[i] *= (58 ** numbers[i])
+
+    av = sum(index) - 100618342136696320
+    av = av ^ 177451812
+
     return av
