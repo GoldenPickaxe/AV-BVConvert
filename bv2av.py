@@ -1,4 +1,6 @@
 table = 'fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
+xor = 177451812
+sub = 100618342136696320
 
 
 def bv2av(bv: str):
@@ -14,7 +16,7 @@ def bv2av(bv: str):
     for i in range(10):
         index[i] *= (58 ** numbers[i])
 
-    av = sum(index) - 100618342136696320
-    av = av ^ 177451812
+    av = sum(index) - sub
+    av = av ^ xor
 
     return av
