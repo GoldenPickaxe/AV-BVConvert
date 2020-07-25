@@ -1,6 +1,6 @@
 table = 'fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
 xor = 177451812
-sub = 100618342136696320
+num = 100618342136696320
 
 
 def bv2av(bv: str):
