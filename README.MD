@@ -7,5 +7,5 @@
 170001
 ```
 
-BV转AV算法来自：av99160403/BV1R7411y7kw<br>
-AV转BV算法来自：av98869161/BV1N741127Tj
+BV转AV算法来自：[av99160403](http://b23.tv/av99160403)/[BV1R7411y7kw](http://b23.tv/BV1R7411y7kw)<br>
+AV转BV算法来自：[av98869161](http://b23.tv/av98869161)/[BV1N741127Tj](http://b23.tv/BV1N741127Tj)
