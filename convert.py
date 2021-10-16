@@ -4,8 +4,8 @@ add = 100618342136696320
 
 
 def bv2av(bv: str):
-    """Example: 17x411w7KC
-       Result: 170001"""
+    """Example: bv2av('17x411w7KC')
+       Result:  170001"""
 
     index = []
 
@@ -23,14 +23,9 @@ def bv2av(bv: str):
     return av
 
 
-def div(x, y, /):
-    """Return x / y."""
-    return divmod(x, y)[0]
-
-
 def av2bv(av: int):
-    """Example:170001
-       Result: 17x411w7KC"""
+    """Example: av2bv(170001)
+       Result:  '17x411w7KC'"""
 
     num = av ^ xor
     num += add
@@ -38,7 +33,7 @@ def av2bv(av: int):
     values = []
 
     for n in range(10):
-        values.append(div(num, 58 ** n) % 58)
+        values.append(num / 58**n) % 58)
 
     items = []
 
